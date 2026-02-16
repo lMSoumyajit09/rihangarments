@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="Ov1I2Q1cAWLTCUnX_aliwBck3kt9MvA28BRAiwlBf0o" />
+<meta name="description" content="Rihan Garments offers sarees, nightwear, gamcha, dhoti and more with GST billing and online order facility.">
+
+<title>Rihan Garments</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+  emailjs.init({
+    publicKey: "6Kz2mcisW-wx8P3jV",
+  });
+</script>
+
+<!-- jsPDF -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+
+<body>
+
+<header>
+  <h1>Rihan Garments</h1>
+  <h2>Elegance in every thread</h2>
+  <h3>Prof. Bina Rani Shil</h3>
+  <nav>
+    <a href="#products">Products</a>
+    <a href="#order">Order</a>
+  </nav>
+</header>
+
+<section id="products">
+  <h2>Our Collection</h2>
+
+  <div class="category-buttons">
+    <button data-category="All">All</button>
+    <button data-category="Nightwear">Nightwear</button>
+    <button data-category="Bed Covers">Bed Covers</button>
+    <button data-category="Sarees">Sarees</button>
+    <button data-category="Blouse">Blouse</button>
+    <button data-category="Gamcha">Gamcha</button>
+    <button data-category="Dhoti">Dhoti</button>
+    <button data-category="Vests">Vests</button>
+  </div>
+
+  <div class="product-list" id="product-list"></div>
+</section>
+
+<section id="order">
+  <h2>Place Your Order</h2>
+
+  <div id="cart">
+    <h3>Cart (<span id="cart-count">0</span>)</h3>
+    <div id="cart-items"></div>
+    <p class="total-line">Total: ₹<span id="total">0</span></p>
+
+    <button id="whatsapp-btn">Order via WhatsApp</button>
+    <button id="download-bill">Download Bill (PDF)</button>
+  </div>
+
+  <form id="order-form">
+    <input type="text" id="customer-name" placeholder="Your Name" required>
+    <input type="tel" id="customer-phone" placeholder="Phone Number" required>
+    <textarea id="customer-address" placeholder="Your Address" required></textarea>
+    <button type="submit">Submit Order</button>
+  </form>
+</section>
+
+<footer>
+  <p>📞 +91-98XXXXXXXX | ✉ rihangarments26@gmail.com</p>
+  <p>Created and Designed by: S. Seal</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
