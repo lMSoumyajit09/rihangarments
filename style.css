@@ -1,0 +1,143 @@
+﻿body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(white, #fff8e1);
+  color: #4e342e;
+  scroll-behavior: smooth;
+}
+
+header {
+  background: #b71c1c;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+header h1 {
+ font-size: 4em;
+}
+
+header h2 {
+  font-size: 1em;
+}
+
+header h3 {
+  font-size: 1.5em;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.category-buttons button {
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 20px;
+  border: 2px solid #b71c1c;
+  background: #fff8e1;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.category-buttons button.active {
+  background: #b71c1c;
+  color: white;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.product {
+  width: 230px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  padding: 15px;
+}
+
+.product img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.discount {
+  background: #ffeb3b;
+  padding: 5px;
+  font-weight: bold;
+  border-radius: 5px;
+  color: #b71c1c;
+}
+
+#cart {
+  max-width: 500px;
+  margin: auto;
+  background: #fff8e1;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+  padding: 8px;
+  background: white;
+  border-radius: 8px;
+}
+
+.total-line {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+input, textarea, button, select {
+  width: 90%;
+  padding: 12px;
+  margin: 10px;
+  border-radius: 10px;
+  border: 2px solid #b71c1c;
+}
+
+button {
+  background: linear-gradient(#b71c1c, #ffeb3b);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+footer {
+  background: #b71c1c;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    url("images/durga.png"),
+    url("images/diya.png");
+  background-repeat: repeat;
+  background-size: 250px 250px;
+  background-position: 0 0, 125px 125px;
+  opacity: 0.06;
+  pointer-events: none;
+  z-index: -1;
+}
